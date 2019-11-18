@@ -1,22 +1,5 @@
-const inquirer = require('inquirer');
-inquirer
-  .prompt([
-      {
-          name: 'userName',
-          message: 'What is your name?',
-      },
-      {
-          name: 'userId',
-          message: 'What is your ID number?',
-      },
-      {
-          type: 'list',
-          name: 'userRole',
-          message: 'What is your role?',
-          choices: ['Manager', 'Engineer', 'Intern'],
+const Employee = require("./lib/Employee");
 
-      }
-  ])
-  .then(answers => {
-    console.info('Answer:', answers);
-  });
+const employee = new Employee();
+
+employee.getName()
