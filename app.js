@@ -8,7 +8,7 @@ inquirer
       {
           name: 'userId',
           message: 'What is your ID number?',
-      }
+      },
       {
           type: 'list',
           name: 'userRole',
